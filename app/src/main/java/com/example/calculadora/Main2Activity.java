@@ -63,6 +63,10 @@ public class Main2Activity extends AppCompatActivity {
         currenNum.setText(String.format("%s9",currenNum.getText()));
         operation.setText(String.format("%s9",operation.getText()));
     }
+    public void pressButton0(View v) {
+        currenNum.setText(String.format("%s0",currenNum.getText()));
+        operation.setText(String.format("%s0",operation.getText()));
+    }
     public void pressButtonAdd(View v) {
         numbers[num] = Double.parseDouble(currenNum.getText().toString());
         opSymbols[num] = "+";
@@ -98,6 +102,8 @@ public class Main2Activity extends AppCompatActivity {
         numbers = new double[15];
         opSymbols = new String[15];
     }
+
+
     public void pressButtonEqual(View v) {
         numbers[num] = Double.parseDouble(currenNum.getText().toString());
         int i;
